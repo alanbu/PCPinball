@@ -1,0 +1,64 @@
+PC Play Pinball
+---------------
+
+Version 1.0 March 2008
+
+This game is a conversion of an early 90s DOS pinball game.
+
+
+Keys
+----
+
+Press and hold SPACE to launch the ball.
+
+Left Shift - Left flipper
+
+Right Shift - Right flipper
+
+k - shake table
+
+Escape or q - exit current game
+
+
+Installation
+------------
+
+This program is 32 bit compatible and requires RISC OS 3.6+.
+
+You also need to install the Shared Unix library in your
+System folder. It is available from:
+ 
+http://www.riscos.info/downloads/gccsdk/sharedunixlib/system.zip
+
+
+Command Line options
+--------------------
+
+-fullscreen - run the program fullscreen 
+              (the current !Run file does this)
+
+-nosound - run without sound
+
+
+Conversion details
+------------------
+
+This conversion using C and the SDL library by Alan Buckley 2008.
+
+Original version in Turbo Pascal, called PC Spiel Pinball, was written by Ansgar Scherp and Joachim Gelhaus.
+
+Many thanks to them for releasing the source with a non-restrictive copyright.
+
+See the file COPYRIGHT for details of the copyright.
+
+The C source is provided in the "source" subdirectory.
+
+The original game had a second table. If enough people are interested I
+would see if I could produce a second game using this other table.
+
+
+Contact
+-------
+
+Alan Buckley
+email: alan_baa@hotmail.com

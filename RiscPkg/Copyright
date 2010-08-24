@@ -1,0 +1,22 @@
+PC Play Pinball
+***************
+
+  This game has been converted from the original Turbo Pascal source
+  game PC Spiel Pinball written by Ansgar Scherp and Joachim Gelhaus
+  to C using the SDL library for the graphics.
+
+  The C version was written by Alan Buckley in 2008.
+
+  The copyright remains the same as for the original source release.
+
+  (c) vIRTUAL tECHNOLOGIES 1993-1996 Ansgar Scherp, Joachim Gelhaus
+
+  You may use this code for personal and commercal use, but you MUST give
+  credits to us, when you use this code or portions in your own productions.
+  Distribition via any media is explicit allowed.
+
+  DISCLAIMER:
+  We give no warranty for this code, because it was coded for us, and not
+  for the public. But after lot of people asking us for releasing the
+  source, we decided, to make this source avialable.
+

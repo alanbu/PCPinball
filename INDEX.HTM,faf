@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>PC Play Pinball for RISC OS</title>
+</head>
+<body>
+<H1>PC Play Pinball 1.0</H1>
+<p>This is a conversion of a 90's DOS pinball game called PC Spiel Pinball.
+</p>
+<p>The conversion has 2D flat graphics and dodgy physics, but I still find it fun!!!
+</p>
+<p>Many thanks go Ansgar Scherp and Joachim Gelhaus who wrote the original
+version in Turbo Pascal and released the source code with a non-restrictive copyright.
+</p>
+<p>This version coded in C with the help of the SDL library.
+</p>
+<H2>RISC OS downloads</H2>
+<ul>
+   <li><a href="pcppinball.zip">The game including source code (377KB)</a></li>
+   <li><a href="pcspborig.zip">The original Turbo Pascal DOS source for reference (380KB)</a></li>
+</ul>
+
+<H2>Requirements</H2>
+<p>To run this program requires</p>
+<ul>
+<li>The Shared Unix Library available from
+ <a href = "http://www.riscos.info/downloads/gccsdk/sharedunixlib/system.zip">here</a>.
+This is provided in an archive which contains a !System application which needs to be merged with your !System.
+</li>
+</ul>
+<H2>Compatibility</H2>
+<ul>
+<li>Iyonix - yes</li>
+<li>RISC OS 4+ on a StrongArm RPC or faster machine - yes (tried on 4.0.2 and 4.39)</li>
+<li>A9 Home - yes</li>
+<li>RISC OS 3.6+ theoretically yes, I don't know about speed though (untested)</li>
+<li>Earlier versions of RISC OS - No</li>
+</ul>
+<p>
+<a href = "../index.htm">Alan's Home Page</a>
+</p>
+</body>
+</html>
