@@ -1,0 +1,14 @@
+Source: PCPinball
+Version: 1.0-1
+Section: Games
+Priority: Optional
+Maintainer: Alan Buckley <alan_baa@hotmail.com>
+Standards-Version: 0.1.0
+Licence: Free
+Description: Conversion of DOS pinball game
+ This is a conversion of a 90's DOS pinball game called PC Spiel Pinball.
+
+ The conversion has 2D flat graphics and dodgy physics but can still be fun!
+
+Package: PCPinball
+Depends: SharedUnixLibrary, DRenderer

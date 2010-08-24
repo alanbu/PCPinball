@@ -1,0 +1,7 @@
+| Obey file for PCSBinBall
+
+WimpSlot -min 2048K -max 2048K
+
+Set PCPinball$Dir <Obey$Dir>
+
+Run <PCPinball$Dir>.!RunImage -fullscreen

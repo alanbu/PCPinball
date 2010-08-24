@@ -1,0 +1,173 @@
+------------------------------------------------------------------------------
+			  ****************************
+		      ****   PC Spiel Pinball SOURCE  ****
+			  ****************************
+------------------------------------------------------------------------------
+
+  Yes, you guested it:
+  This ist the FULL Source-Code of the pinball as we released it in the
+  PC Spiel 12/95 ! This archive includes also all utilities we wrote for
+  the Pinball and all graphics.
+
+  (c) vIRTUAL tECHNOLOGIES 1993-1996 Ansgar Scherp, Joachim Gelhaus
+
+  You may use this code for personal and commercal use, but you MUST give 
+  credits to us, when you use this code or portions in your own productions.
+  Distribition via any media is explicit allowed.
+
+  You'll need TP 6.0 or higher to compile. This program runs only in real
+  mode. Don't run it from the IDE!
+
+  DISCLAIMER:
+  We give no warranty for this code, because it was coded for us, and not
+  for the public. But after lot of people asking us for releasing the
+  source, we decided, to make this source avialable.
+
+------------------------------------------------------------------------------
+ how to contact us:
+------------------------------------------------------------------------------
+    Ansgar Scherp
+    Drerstraáe 23
+    49377 Vechta Ot Langf”rden
+    Germany
+    scherp.ansgar@informatik.uni-oldenburg.de
+
+  or
+
+    Joachim Gelhaus
+    Erlenweg 3
+    49377 Vechta
+    Germany
+    j.gelhaus@flight.gun.de
+
+  or via our homepage at
+
+    http://www.informatik.uni-oldenburg.de/~virtech/
+
+  or our Mailbox X - Treme BBS
+
+    + 49 (0) 4441 / 851887   
+
+------------------------------------------------------------------------------
+ EXTENSIONS:
+------------------------------------------------------------------------------
+*.1,2,3,4 -> the different Graphics for Plane 1-4
+*.GFX     -> Planes 1-4 copied together ( in this order: *.1 *.2 *.3 *.4)
+*.MSK     -> special Masks , e.g. for the Pinballarms
+xxxx.TAB  -> graphic of a table
+xxxx.GRO  -> Maske of a table
+xxxx.COL  -> palette
+xxxx.MPA  -> mini-Palette (color r,g,b)
+*.SND     -> soundfile
+
+------------------------------------------------------------------------------
+ GENERAL MASK COLORS
+------------------------------------------------------------------------------
+  0 -> nothing, ball passes them
+255 -> color of the main frame, (look at the bitmaps!)
+1   -> color of the pinballarms
+2-4 -> bumpercolor
+
+------------------------------------------------------------------------------
+ Colors for the first table: ICE
+------------------------------------------------------------------------------
+0-13 -> Lights like ASMspecial...
+16-21,25 -> the colors will be ignored and manipulatetd!
+	    Colors 17-20,25 are reserved for the Ball
+30 -> Background of the pinballarms and the table. Will be filled up
+      with a light-brown plasma; the background of the arms will then
+      have color 30 and 234
+31-33 -> the other arm-colors
+129,130 -> colors for the LED (led_color_1 & 2)
+217-225 -> Extra-Bumper
+226-234 -> table ackground
+240-248 -> 3 Bumper
+235-255 -> the ball will not be over this colors!
+All other colors are free choseable.
+
+------------------------------------------------------------------------------
+ Colors for the second table: SPACE-RAT
+------------------------------------------------------------------------------
+1-89    -> Foreground, Ball ,flys' over it
+90-119  -> Lights
+150-157 -> Background, Ball ,flys' under it
+200-203 -> RailRoadLines
+210-212 -> RailRoadLines lying over the ball
+Lights:
+90,91,92 -> R, A, T
+93,94,95 -> 5K, 3K, 1K (left  top)
+96       -> 3 Bumper (left)
+97       -> 3 Bumper (right)
+98       -> 4 Bumper (near to the box)
+99,100,101              -> Arrows 2x, 4x, 6x
+102,103,104             -> Array 500, 1000, 1500
+105,106,107,108         -> Array 10.000, 20.000, 30.000, XTRABALL
+109,110,111,112,113,114 -> P, H, A, S, E, R
+115                     -> RL (Relaunch, bottom left and right)
+116,117,118,119         -> 4 arrows in the box (LO, RO, RU, LU)
+
+And, if you dislike then yellow-green Background: 84,85,86,87 :-))
+
+------------------------------------------------------------------------------
+ At least needed configuration:
+------------------------------------------------------------------------------
+		286/16 with 595KB free memory
+		VGA with at least 256KB
+		Sound Blaster or compatible (optional)
+		CD-ROM (optional)
+
+PCS-Pinball was testet on the following machines:
+
+Configuration:  i486DX 33 / 8 MB
+		Trident TVGA 9000 512KB
+		Sound Blaster Pro
+		Sony COR 334 CD-ROM (double Speed)
+		MSCDEX 2.21 / SLCD 1.71a Device Driver
+
+		i386Dx 40Mhz / 8 MB
+		ET4000 1 MB
+		Trust Soundexpert Deluxe II
+		SCSI Mitsumi CD-ROM (double Speed)
+		MSCDEX 2.23
+
+		a386SX 33 / 4 MB
+		OAK Super-VGA OTI-067 512KB
+		Sound Blaster 2.0
+		Mitsumi LU005S CD-ROM (single Speed)
+		MSCDEX 2.23 / MTMCDAE 02.10 Device Driver
+
+		a286 16 / 1 MB
+		OAK VGA-80 256KB
+
+		a386DX25 / 4MB
+		ET3000 512KB
+		Soundblaster 16 ASP
+		Mitsumi FX001D (double speed)
+		MSCDEX 2.23 / MTMCDAE 02.10 Device Driver
+
+		Also runs on 99.999% of all 486er, Pentiums (TM),
+		Graphiccards, CD-ROM-Drives and Soundcards.
+
+If PCS-PINBALL is not running correctly, please try to eliminate the error
+with these hints:
+
+Problem: PCS-PINBALL hangs up, after starting.
+Answer : Try to get at least 595 KB of free RAM!
+	 To achive this, remove any TSR and device drivers.
+	 Maybe, some memory resistend programms are not compatible with
+	 PCS-PINBALL.
+
+Problem: CD-Sound is not functioning correctly.
+Answer : Get a newer MSCDEX Driver. Preferly 2.32 or greater.
+
+Problem: The Sound in the game is not correct or the game hangs up.
+Answer : Your soundcard is not 100% compatible to SoundBlaster cards.
+	 Turn off sound in menu.
+
+Problem: If HIGHRESOLUTION is on, the game is not working correctly.
+Answer : Turn off the HIGHRESOLUTION or buy a better VGA board.
+
+Problem: If OVERSCAN is on, the DOT-MATRIX not fully visible on screen.
+Answer : Fix the problem by fiddling around with the "V-SIZE" at your screen.
+
+
